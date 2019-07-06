@@ -3,6 +3,8 @@
     let resP = document.getElementById('res');
     let box = document.getElementById('box');
     let selectTable =  document.getElementById('select-table');
+    let currentIndex;
+    let currentTable;
 
 
 
@@ -50,14 +52,38 @@
             option.value = i;
             selectTable.appendChild(option);
         }
-    };
+    }
+
+
 
     addTablesToSelect(tables);
-    let currentTable = tables[0].ratios;
+
+    function setCurrentTable() {
+        currentIndex = 0;
+        if (localStorage.getItem('selectedOption')){
+            currentIndex = Number(JSON.parse(localStorage.getItem('selectedOption')));
+        }
+        currentTable = tables[currentIndex].ratios;
+        let options = selectTable.getElementsByTagName('option');
+        console.log(options);
+        for (let i = 0; i < options.length; i++){
+            if (i === currentIndex) {
+                options[i].selected = true;
+            }
+        }
+
+    }
+
+    setCurrentTable();
+
+
 
     selectTable.onchange = function () {
-        let index = selectTable.value
+        let index = selectTable.value;
+        localStorage.setItem('selectedOption', JSON.stringify(index));
         currentTable = tables[index].ratios;
+        resP.innerHTML = tableInterpolation(myInput.value, currentTable);
+
 
     };
 

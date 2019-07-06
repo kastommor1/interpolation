@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="62a50cf5-9ac0-4449-9e7c-b17a208c2c99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="1615">
+              <caret line="95" column="6" lean-forward="true" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -128,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562404970328</updated>
-      <workItem from="1562404971507" duration="6453000" />
+      <workItem from="1562404971507" duration="9235000" />
     </task>
     <task id="LOCAL-00001" summary="V3. interpolation ONE table">
       <created>1562405091131</created>
@@ -200,11 +199,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562410671403</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="V6. select done">
+      <created>1562411905566</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562411905566</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6453000" />
+    <option name="totallyTimeSpent" value="9235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -245,7 +251,8 @@
     <MESSAGE value="V4. git ignore p 6" />
     <MESSAGE value="V5. Multi table begin" />
     <MESSAGE value="V5. select" />
-    <option name="LAST_COMMIT_MESSAGE" value="V5. select" />
+    <MESSAGE value="V6. select done" />
+    <option name="LAST_COMMIT_MESSAGE" value="V6. select done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -270,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="1615">
+          <caret line="95" column="6" lean-forward="true" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
           <folding />
         </state>
       </provider>
