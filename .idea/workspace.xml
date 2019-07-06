@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a50cf5-9ac0-4449-9e7c-b17a208c2c99" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -135,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562404970328</updated>
-      <workItem from="1562404971507" duration="1567000" />
+      <workItem from="1562404971507" duration="2288000" />
     </task>
     <task id="LOCAL-00001" summary="V3. interpolation ONE table">
       <created>1562405091131</created>
@@ -151,11 +151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562405170996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="V4. git ignore p 1">
+      <created>1562406670250</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562406670250</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1567000" />
+    <option name="totallyTimeSpent" value="2288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -187,7 +194,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V3. interpolation ONE table" />
     <MESSAGE value="V4. interpolation ONE table" />
-    <option name="LAST_COMMIT_MESSAGE" value="V4. interpolation ONE table" />
+    <MESSAGE value="V4. git ignore p 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V4. git ignore p 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -213,7 +221,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
