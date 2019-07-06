@@ -2,6 +2,10 @@
     let myInput = document.getElementById('my-input');
     let resP = document.getElementById('res');
     let box = document.getElementById('box');
+    let selectTable =  document.getElementById('select-table');
+
+
+
     let Ratio = function (number, coeff) {
         this.number = number;
         this.coeff = coeff;
