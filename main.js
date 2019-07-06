@@ -27,17 +27,45 @@
             new Ratio(50, 0.55),
             new Ratio(100, 0.55),
             new Ratio(200, 0.5)
-        ]}
+        ]},
+        {tableName: 'Табл.xx',
+        docName: 'СП xx',
+        ratios: [
+            new Ratio(1, 1),
+            new Ratio(2, 1),
+            new Ratio(3, 0.9),
+            new Ratio(5, 0.8),
+            new Ratio(8, 0.75),
+            new Ratio(10, 0.7),
+            new Ratio(15, 0.65),
+            new Ratio(20, 0.65)
+        ]},
     ];
 
+    function addTablesToSelect(tables) {
+        for (let i = 0; i < tables.length; i++){
+            let option = document.createElement('option');
+            let text = document.createTextNode(tables[i].tableName);
+            option.appendChild(text);
+            option.value = i;
+            selectTable.appendChild(option);
+        }
+    };
 
+    addTablesToSelect(tables);
+    let currentTable = tables[0].ratios;
 
+    selectTable.onchange = function () {
+        let index = selectTable.value
+        currentTable = tables[index].ratios;
+
+    };
 
 
     myInput.onkeyup = function () {
         let currentValue = myInput.value;
 
-        resP.innerHTML = tableInterpolation(currentValue, tables[0].ratios);
+        resP.innerHTML = tableInterpolation(currentValue, currentTable);
 
     };
 
