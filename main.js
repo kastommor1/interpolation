@@ -1,5 +1,6 @@
 (function () {
     let myInput = document.getElementById('my-input');
+    myInput.focus();
     let resP = document.getElementById('res');
     let box = document.getElementById('box');
     let selectTable =  document.getElementById('select-table');
@@ -65,7 +66,6 @@
         }
         currentTable = tables[currentIndex].ratios;
         let options = selectTable.getElementsByTagName('option');
-        console.log(options);
         for (let i = 0; i < options.length; i++){
             if (i === currentIndex) {
                 options[i].selected = true;
@@ -118,7 +118,7 @@
 
         }
 
-        return 'Число вне диапазона';
+        return 'Число не відповідає діапазону';
 
     }
     
