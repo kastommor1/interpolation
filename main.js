@@ -65,4 +65,7 @@
         return res.toFixed(2);
 
     }
+
+    console.log('git ignore done?');
+
 })()
