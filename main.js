@@ -67,6 +67,5 @@
     }
 
     console.log('git ignore done??');
-    console.log('git ignore done??');
 
 })()
