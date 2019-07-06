@@ -7,31 +7,42 @@
         this.coeff = coeff;
     };
 
-
-    let ratios = [
-        new Ratio(2, 1),
-        new Ratio(3, 0.9),
-        new Ratio(5, 0.8),
-        new Ratio(8, 0.75),
-        new Ratio(10, 0.7),
-        new Ratio(15, 0.65),
-        new Ratio(20, 0.65),
-        new Ratio(30, 0.55),
-        new Ratio(50, 0.55),
-        new Ratio(100, 0.55),
-        new Ratio(200, 0.5)
+    let tables = [
+        {tableName: 'Табл.6.9',
+        docName: 'СП 31-110-2003',
+        ratios: [
+            new Ratio(1, 1),
+            new Ratio(2, 1),
+            new Ratio(3, 0.9),
+            new Ratio(5, 0.8),
+            new Ratio(8, 0.75),
+            new Ratio(10, 0.7),
+            new Ratio(15, 0.65),
+            new Ratio(20, 0.65),
+            new Ratio(30, 0.55),
+            new Ratio(50, 0.55),
+            new Ratio(100, 0.55),
+            new Ratio(200, 0.5)
+        ]}
     ];
+
+
+
 
 
     myInput.onkeyup = function () {
         let currentValue = myInput.value;
 
-        resP.innerHTML = tableInterpolation(currentValue, ratios);
+        resP.innerHTML = tableInterpolation(currentValue, tables[0].ratios);
 
     };
 
     function tableInterpolation(currentValue, ratios) {
-        let status = false;
+
+        if(currentValue === ''){
+            return '';
+        }
+
         for (let i=1; i < ratios.length; i++){
 
             let lowerValue = ratios[i - 1].number;
@@ -41,7 +52,7 @@
                 if (currentValue >= lowerValue && currentValue <= higherValue) {
                     let res = rangeInterpolation(ratios[i - 1], currentValue, ratios[i]);
 
-                    return res
+                    return res;
 
                     break
                 }
@@ -66,6 +77,4 @@
 
     }
 
-    console.log('git ignore done??');
-
-})()
+})();
